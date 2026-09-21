@@ -1,32 +1,26 @@
-# Schritte Trainer — A1–B1
+# Schritte Trainer — A1–B1 + Cloud Sync
 
-Статичний PWA-тренажер для Schritte plus Neu.
+PWA-тренажер для Schritte plus Neu 1–6.
 
-## Рівні
+## Є
 - A1 — Schritte 1–2
 - A2 — Schritte 3–4
 - B1 — Schritte 5–6
+- іменники: артиклі, множина, переклад, правопис
+- дієслова: переклад, правопис
+- адаптивні повторення
+- «Вивчив» + повернення у навчання
+- PWA / offline
+- **окремі акаунти для кожного користувача**
+- автоматична хмарна синхронізація через Supabase + RLS
 
-## Дані
-Іменникові картки по книгах: {1: 624, 2: 686, 3: 362, 4: 349, 5: 440, 6: 224}
-Дієслівні картки по книгах: {1: 140, 2: 125, 3: 150, 4: 100, 5: 175, 6: 127}
+## Cloud status
 
-Разом:
-- іменники: 2685
-- дієслова: 817
+Supabase is already configured for this build.
+Upload/replace the files in the GitHub Pages repository.
 
-У режимі артиклів множина показується одразу під словом.
-Прогрес зберігається локально у браузері; є експорт/імпорт.
+Recommended one-time setting:
+**Supabase → Authentication → URL Configuration → Site URL**
+`https://supportop.github.io/schritte-trainer/`
 
-## GitHub Pages
-1. Завантаж вміст цієї папки в корінь репозиторію.
-2. Settings → Pages.
-3. Build and deployment → Deploy from a branch.
-4. Branch `main`, folder `/ (root)`.
-5. Save.
-
-Android/Chrome та ПК можуть встановлювати PWA; на iPhone/iPad:
-Safari → Share → Add to Home Screen.
-
-> Локальний прогрес не синхронізується автоматично між різними пристроями.
-> Для цього потрібне окреме хмарне сховище/акаунт.
+See `SYNC_SETUP.md` for details.

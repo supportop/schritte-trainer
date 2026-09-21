@@ -1,7 +1,7 @@
 {
   "name": "Schritte Trainer",
   "short_name": "Schritte",
-  "description": "Тренажер Schritte plus Neu A1–B1 (книги 1–6) з адаптивними повтореннями",
+  "description": "Schritte plus Neu A1–B1 з окремими акаунтами та хмарною синхронізацією прогресу",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
